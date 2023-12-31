@@ -1,0 +1,18 @@
+.navBar{
+    width:98%;
+    height:8vh;
+    background: #1a237e;
+    border-bottom: 1px solid #555;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    margin: 1vh 1vw;
+    border-radius: 10px;
+}
+
+.logo-container{
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 1vh;
+}
