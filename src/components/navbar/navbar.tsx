@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styles from "./navbar.module.css";
 import * as data from './nav.links.json';
 import pageLogo from "../../assets/channel watermark.png";
+import {FaBars, FaXmark} from "react-icons/fa6" 
 const linksString = JSON.stringify(data);
 const links = JSON.parse(linksString).links;
 
@@ -29,15 +30,10 @@ const Links: React.FC<{ links: Link[] }> = ({ links }) => {
 }
 
 
-const FloatingMenu: React.FC = () => {
-  const [isActive, setIsActive] = useState(false);
-
-  const handleClick = ()=>{
-    setIsActive(current => !current);
-  }
+const FloatingMenu: React.FC<{active:boolean}> = ({active}) => {
   return (
     <>
-      <div className={isActive ? `${styles['floatingMenu']}`:`${styles['hideMenu']}`}>
+      <div className={active ? `${styles['floatingMenu']}` : `${styles['hideMenu']}`}>
         <Links links={links} />
       </div>
     </>
@@ -45,18 +41,22 @@ const FloatingMenu: React.FC = () => {
 }
 
 const Navbar: React.FC = () => {
+  const [isActive, setIsActive] = useState(false);
   const pageName = process.env.OWNER_NAME?.split(" ")[0];
   return (
     <>
-      <nav className={styles.navBar}>
+      <nav className={`shadow-xl ${styles.navBar}`}>
         <div className={styles['logo-container']}>
           <img src={pageLogo} className={styles['pageLogo']} />
           <span className={styles['shortName']}>{pageName}</span>
           <span className={styles['longName']}>{process.env.OWNER_NAME}</span>
         </div>
         <Links links={links} />
+        <div>
+          <button className={styles['toggleButton']} onClick={()=>setIsActive(current => !current)}>{!isActive?<FaBars/>:<FaXmark/>}</button>
+        </div>
       </nav>
-      <FloatingMenu />
+      <FloatingMenu active={isActive}/>
     </>
   )
 }
