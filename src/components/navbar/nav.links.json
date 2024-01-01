@@ -5,12 +5,20 @@
       "href": "#home"
     },
     {
-      "label": "Home",
-      "href": "#home"
+      "label": "About Me!",
+      "href": "#about"
     },
     {
-      "label": "Home",
-      "href": "#home"
+      "label": "My Skills",
+      "href": "#skills"
+    },
+    {
+      "label": "Projects",
+      "href": "#projects"
+    },
+    {
+      "label": "Contact Me",
+      "href": "#contact"
     }
   ]
 }
