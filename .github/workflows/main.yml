@@ -41,6 +41,12 @@ jobs:
         run: npm run build
         env:
           OWNER_NAME: ${{vars.OWNER_NAME}}
+          LINKEDIN_URL: ${{vars.LINKEDIN_URL}}
+          GHUB_URL: ${{vars.GHUB_URL}}
+          TWITTER_URL: ${{vars.TWITTER_URL}}
+          DEV_URL: ${{vars.DEV_URL}}
+          INSTAGRAM_URL: ${{vars.INSTAGRAM_URL}}
+          TELEGAM_URL: ${{vars.TELEGRAM_URL}}
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact

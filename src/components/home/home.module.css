@@ -1,0 +1,186 @@
+.homeDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:10vh;
+    background-image: url("/src/assets/homeBackdrop.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.homeContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1vh 1vw;
+    padding: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 96vw;
+    height: 86vh;
+}
+.folioContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 55vh;
+    margin: 0 5vw;
+}
+.contentArea{
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.owner{
+    color: #0165a1;
+}
+
+.folioPic{
+    width:36vw;
+    height: 70vh;
+    background-color: #fff;
+    margin: auto;
+}
+.folioPic img{
+    width:30vw;
+    margin: auto;
+}
+.folioContent span{
+    font-size: 48px;
+    font-weight: bold;
+}
+.folioContent p{
+    font-size: 24px;
+}
+.socialButtons{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+}
+.socialButtons a{
+    background-color: #0165a1;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.contactButton{
+    margin-top: 5vh;
+}
+.contactButton a{
+    padding:10px 15px;
+    background-color: #0165a1;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 760px) {
+    .homeDiv{
+        height: fit-content;
+    }
+    .homeContainer{
+        flex-direction: column;
+        height: 88vh;
+        justify-content: space-evenly;
+    }
+    .folioPic{
+        height: 50%;
+        width: auto;
+    }
+    .folioPic img{
+        height: 80%;
+        width: auto;
+    }
+    .folioContent{
+        justify-content: space-evenly;
+        height: 50%;
+    }
+    .folioContent span{
+        font-size: 30px;
+    }
+    .folioContent p{
+        font-size: 16px ;
+    }
+    .contentArea{
+        height: 50%;
+    }
+    .contactButton{
+        margin-top: 0;
+    }
+    .socialButtons a{
+        padding: 6px;
+    }
+    .socialButtons{
+        width: 45vw;
+    }
+}
+
+
+@media screen and (max-width: 1000px) and (min-width:761px){
+    .homeDiv{
+        height: fit-content;
+    }
+    .homeContainer{
+        flex-direction: column;
+        height: 88vh;
+        justify-content: space-evenly;
+    }
+    .folioPic{
+        height: 35vh;
+        width: 40%;
+    }
+    .folioPic img{
+        height: fit-content;
+        width: 80%;
+    }
+    .folioContent{
+        justify-content: space-evenly;
+        height: 50vh;
+    }
+    .folioContent span{
+        font-size: 42px;
+    }
+    .folioContent p{
+        font-size: 28px ;
+    }
+    .contentArea{
+        height: 25vh;
+    }
+    .contactButton{
+        margin-top: 0;
+    }
+    .socialButtons a{
+        padding: 6px;
+    }
+    .socialButtons{
+        width: 45vw;
+    }
+}
+@media screen and (orientation:landscape) and (max-height: 655px){
+    .homeContainer{
+        height: 660px;
+    }   
+    .folioPic{
+        height: fit-content;
+        width: fit-content;
+    }
+    .folioPic img{
+        width: 50%
+    }
+    .folioContent{
+        height:50%;
+    }
+    .folioContent span{
+        font-size:30px;
+    }
+    .folioContent p{
+        font-size:20px;
+    }
+    .contactButton{
+        font-size: 16px;
+    }
+}

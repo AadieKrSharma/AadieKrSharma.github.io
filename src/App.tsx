@@ -1,5 +1,6 @@
 import './App.css'
-import Navbar from './components/navbar/navbar'
+import { Home } from './components/home'
+import {Navbar} from'./components/navbar'
 import {useEffect} from 'react'
 
 
@@ -13,6 +14,7 @@ function App() {
   return (
     <>
     <Navbar/>
+    <Home/>
     </>
   )
 }

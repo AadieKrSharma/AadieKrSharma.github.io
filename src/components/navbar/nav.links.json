@@ -2,23 +2,23 @@
   "links": [
     {
       "label": "Home",
-      "href": "#home"
+      "href": "home"
     },
     {
       "label": "About Me!",
-      "href": "#about"
+      "href": "about"
     },
     {
       "label": "My Skills",
-      "href": "#skills"
+      "href": "skills"
     },
     {
       "label": "Projects",
-      "href": "#projects"
+      "href": "projects"
     },
     {
       "label": "Contact Me",
-      "href": "#contact"
+      "href": "contact"
     }
   ]
 }
