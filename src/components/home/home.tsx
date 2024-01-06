@@ -2,8 +2,7 @@ import folioPic from '../../assets/folip_pic.png'
 import styles from "./home.module.css"
 import { FaLinkedinIn, FaDev, FaGithub, FaXTwitter, FaTelegram, FaInstagram} from "react-icons/fa6"
 function Home() {
-    alert(`${window.screen.availHeight},${window.screen.availWidth}`  );
-    return (
+        return (
         <div className={styles.homeDiv}>
             <div className={`shadow-lg ${styles.homeContainer}`}>
                 <div className={`${styles.folioPic}`}>
