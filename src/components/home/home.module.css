@@ -52,7 +52,7 @@
     font-weight: bold;
 }
 .folioContent p{
-    font-size: 24px;
+    font-size: 30px;
 }
 .socialButtons{
     color: #fff;
@@ -160,7 +160,7 @@
         width: 45vw;
     }
 }
-@media screen and (orientation:landscape) and (max-height: 655px){
+@media screen and (orientation:landscape)and (max-height <= 655px){
     .homeContainer{
         height: 660px;
     }   
